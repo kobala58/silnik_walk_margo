@@ -5,7 +5,11 @@ class fight(character):
         pass #need to end
 
     def simplehit(self, attacker: character, defender: character):
-        if defender.armor
+        if defender.armor - defender.power <= 0:
+            hit = 0 
+        else: 
+            defender.hp = defender.hp - (defender.armor-attacker.power)
+    
         
         
 
