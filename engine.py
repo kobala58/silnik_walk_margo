@@ -9,7 +9,8 @@ class fight(character):
             hit = 0 
         else: 
             defender.hp = defender.hp - (defender.armor-attacker.power)
-    
+    def onhits(self):
+        pass
         
         
 
